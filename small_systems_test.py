@@ -71,7 +71,7 @@ with open(output_path, "w") as log_file:
                 log("", log_file)  # blank line below
 
             except Exception as e:
-                log(f"  ❌ ERROR: {e}", log_file)
+                log(f"ERROR: {e}", log_file)
 
         if all_verifications_passed:
             log("All Verifications passed!", log_file)
